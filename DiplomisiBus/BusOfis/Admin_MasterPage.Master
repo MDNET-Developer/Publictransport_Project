@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin_MasterPage.master.cs" Inherits="DiplomisiBus.BusOfis.Admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    
+<body>
+    <form id="form1" runat="server">
+        
+        <style>
+            .admin_menu {
+                background-image: linear-gradient(to top left, #3498db,#273c75);
+                background-attachment: fixed;
+                height: 24cm;
+                 
+            }
+            #admin_menu_ul{
+              
+            }
+            .admin_menu_li{
+                text-align:center;
+                list-style:none;
+                color:snow;
+                font-size:25px;
+            }
+            .admin_menu_li:hover {
+                background-color:#192a56;
+                transition:linear 0.5s;
+                cursor:pointer;
+            }
+        </style>
+       <div class="col-lg-12 container-fluid">
+            <div class="row">
+            <div class="col-lg-2 admin_menu">
+                <br />
+                <img style="width:1cm;height:1cm;border-radius:100%" src="Logolar/icons8_user_77px.png" /> <span style="color:snow;font-size:18px"><a style="color:snow;text-decoration:none" href="ADMIN_HOME.aspx">Salam Admin</a></span>
+                <hr />
+
+                <ul id="admin_menu_ul">
+                    <li class="admin_menu_li">Menu</li>
+                    <li class="admin_menu_li">Footer</li>
+                    <li class="admin_menu_li">Ana səhifə</li>
+                    <li class="admin_menu_li">Marşrutlar</li>
+                    <li class="admin_menu_li">Qarajlar</li>
+                    <li class="admin_menu_li">Sürücülər</li>
+                    <li class="admin_menu_li">Yeni layihələr</li>
+                    <li class="admin_menu_li">Müraciətlər</li>
+                    <li class="admin_menu_li">Vakansiyalar</li>
+                </ul>
+            </div>
+            <div class="col-lg-9">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+        </div>
+       </div>
+    </form>
+</body>
+</html>

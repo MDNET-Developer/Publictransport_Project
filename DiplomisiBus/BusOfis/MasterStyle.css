@@ -1,0 +1,137 @@
+﻿
+#YuxariHisse{
+    height:3cm;
+    background-color:#ededed;
+    display: flex;
+ 
+  justify-content:space-around;
+}
+#YuxariLogo {
+    display: flex;
+  
+    width: auto;
+    height: 3cm;
+    text-align: center;
+}
+#YuxariHava {
+    top:2cm;
+    float: right;
+    text-align: center;
+
+}
+#hava {
+ padding-top:20px;
+ width:auto;
+ height:2.3cm;
+ 
+}
+.menu-li {
+    list-style: none;
+    float: left;
+   
+    /*padding-top:10px;
+    padding-bottom:10px;
+   padding-right:49px;*/
+    padding:6px 27px 6px 27px;
+    
+   cursor:pointer;
+   font-family:Tahoma;
+
+   
+  
+
+}
+.menu-li {
+    transition: 0.5s;
+    height: 0;
+}
+    .menu-li > a {
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+    }
+       
+    .menu-li:hover {
+       
+        background-color: #B60000;
+        color: snow;
+        transition:0.5s;
+       padding-top:6px;
+     height:1.1cm;
+        
+    }
+
+.Menu-ul {
+    background-color: #F48200;
+    height: 1.1cm;
+    position: relative;
+    z-index: 1;
+}
+.footer-li{
+    list-style:none;
+    transition:0.5s;
+    cursor:pointer;
+  
+   
+}
+    .footer-li:hover {
+        margin-left: 15px;
+       color:#F48200;
+    }
+.sosial{
+    margin-bottom:15px;
+}
+#footer{
+    width:100%;
+ 
+    background-color:#ededed;
+}
+.KartBusElement{
+    
+
+}
+.Area3card {
+    transform: scale(0.9);
+    background-color: white;
+    border: none
+}
+    .Area3card:hover {
+        transition: 0.3s;
+        background-color: #dbdbdb;
+        color: #F48200
+    }
+#mobileMenuBTN {
+    height: 1.5cm;
+    background-color: #ededed;
+    display:none;
+}
+@media (max-width:1000px){
+    #mobileMenuBTN {
+        display: block;
+    }
+
+    .menu-li {
+        background-color: #F48200;
+        float: none;
+       
+        border-bottom: 1px solid #B60000;
+        padding-bottom: 27px;
+        margin-left:-0.83cm;
+        width: auto;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    .Menu-ul {
+        display: none;
+       
+    }
+
+}
+@media (min-width:1000px) {
+    .Menu-ul {
+        display: block !important;
+    }
+}
+

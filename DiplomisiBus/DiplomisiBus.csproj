@@ -1,0 +1,425 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A95825E3-3B89-47DD-ABC5-161364D7C51A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DiplomisiBus</RootNamespace>
+    <AssemblyName>DiplomisiBus</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Buses_ADMIN.aspx" />
+    <Content Include="BusOfis\AdminPanelLogIn.aspx" />
+    <Content Include="BusOfis\Admin_DriverPage.aspx" />
+    <Content Include="BusOfis\BusFoto\avto-nomer-azerbaijan.png" />
+    <Content Include="BusOfis\DriverInfo.aspx" />
+    <Content Include="BusOfis\Logolar\Back.png" />
+    <Content Include="BusOfis\Logolar\BusDriver.png" />
+    <Content Include="BusOfis\Logolar\CompanyDriver.png" />
+    <Content Include="BusOfis\Logolar\DriverSkill.png" />
+    <Content Include="BusOfis\Logolar\icons8_customer_50px.png" />
+    <Content Include="BusOfis\Logolar\icons8_delete_chat_48px.png" />
+    <Content Include="BusOfis\Logolar\icons8_edit_property_40px_4.png" />
+    <Content Include="BusOfis\Logolar\icons8_Remove_40px.png" />
+    <Content Include="BusOfis\PhotoSuruculer\AdminParviz.bmp" />
+    <Content Include="BusOfis\Admin_FOOTER.aspx" />
+    <Content Include="BusOfis\ADMIN_HOME.aspx" />
+    <Content Include="BusOfis\Admin_Menu.aspx" />
+    <Content Include="BusOfis\Admin_Muraciet.aspx" />
+    <Content Include="BusOfis\AnaSehife.aspx" />
+    <Content Include="BusOfis\BusAbout.aspx" />
+    <Content Include="BusOfis\BusFoto\21Bus.jpg" />
+    <Content Include="BusOfis\BusFoto\PublicTransportHeadPhotot.jpg" />
+    <Content Include="BusOfis\BusFoto\qaraj1.jpg" />
+    <Content Include="BusOfis\BusFoto\qaraj2.jpg" />
+    <Content Include="BusOfis\BusFoto\qaraj3.jpg" />
+    <Content Include="BusOfis\BusFoto\qaraj4.jpg" />
+    <Content Include="BusOfis\BusFoto\qaraj5.jpg" />
+    <Content Include="BusOfis\Elaqe.aspx" />
+    <Content Include="BusOfis\Info.aspx" />
+    <Content Include="BusOfis\InfoAnimation.js" />
+    <Content Include="BusOfis\Layihelerimiz.aspx" />
+    <Content Include="BusOfis\Logolar\1645993908803.png" />
+    <Content Include="BusOfis\BusesNumber.aspx" />
+    <Content Include="BusOfis\Logolar\BakuBusWallpaper.jpg" />
+    <Content Include="BusOfis\Logolar\BizimleElaqe.png" />
+    <Content Include="BusOfis\Logolar\BMC_logo.svg.png" />
+    <Content Include="BusOfis\Logolar\customer-service.png" />
+    <Content Include="BusOfis\Logolar\Daewoo_logo.png" />
+    <Content Include="BusOfis\Logolar\Elaqe30px.png" />
+    <Content Include="BusOfis\Logolar\Email.png" />
+    <Content Include="BusOfis\Logolar\Face.png" />
+    <Content Include="BusOfis\Logolar\Haqqinda30px.png" />
+    <Content Include="BusOfis\Logolar\Home30px.png" />
+    <Content Include="BusOfis\Logolar\icons8_bus_100px.png" />
+    <Content Include="BusOfis\Logolar\icons8_clock_40px.png" />
+    <Content Include="BusOfis\Logolar\icons8_Close_50px.png" />
+    <Content Include="BusOfis\Logolar\icons8_cv_50px_2.png" />
+    <Content Include="BusOfis\Logolar\icons8_driver_30px.png" />
+    <Content Include="BusOfis\Logolar\icons8_folder_70px.png" />
+    <Content Include="BusOfis\Logolar\icons8_information_50px.png" />
+    <Content Include="BusOfis\Logolar\icons8_Location_20px.png" />
+    <Content Include="BusOfis\Logolar\icons8_mail_70px.png" />
+    <Content Include="BusOfis\Logolar\icons8_mail_70px_1.png" />
+    <Content Include="BusOfis\Logolar\icons8_menu_50px.png" />
+    <Content Include="BusOfis\Logolar\icons8_online_support_70px_3.png" />
+    <Content Include="BusOfis\Logolar\icons8_online_support_90px.png" />
+    <Content Include="BusOfis\Logolar\icons8_phone_20px.png" />
+    <Content Include="BusOfis\Logolar\icons8_project_50px.png" />
+    <Content Include="BusOfis\Logolar\icons8_search_50px_2.png" />
+    <Content Include="BusOfis\Logolar\icons8_send_50px.png" />
+    <Content Include="BusOfis\Logolar\icons8_telegram_app_20px.png" />
+    <Content Include="BusOfis\Logolar\icons8_user_77px.png" />
+    <Content Include="BusOfis\Logolar\icons8_whatsapp_20px.png" />
+    <Content Include="BusOfis\AdminPhoto\IMG_20220331_082027.jpg" />
+    <Content Include="BusOfis\Logolar\Insta.png" />
+    <Content Include="BusOfis\Logolar\ISUZULogo.png" />
+    <Content Include="BusOfis\Logolar\IVECOLogo.png" />
+    <Content Include="BusOfis\Logolar\IVECO_Logo.png" />
+    <Content Include="BusOfis\Logolar\KARSANLogo.png" />
+    <Content Include="BusOfis\Logolar\Layihe30PX.png" />
+    <Content Include="BusOfis\Logolar\Marsurut30px.png" />
+    <Content Include="BusOfis\Logolar\Menteqe30px.png" />
+    <Content Include="BusOfis\Logolar\MotherPageFoto.jpg" />
+    <Content Include="BusOfis\Logolar\MotherPageFoto2.jpg" />
+    <Content Include="BusOfis\Logolar\MotherPageFoto3.jpg" />
+    <Content Include="BusOfis\Logolar\Otokar-Logo.wine.png" />
+    <Content Include="BusOfis\Logolar\Qaraj30px.png" />
+    <Content Include="BusOfis\Logolar\Struktur30px.png" />
+    <Content Include="BusOfis\Logolar\TestKarusel1.jpg" />
+    <Content Include="BusOfis\Logolar\TestKarusel2.jpg" />
+    <Content Include="BusOfis\Logolar\TestKarusel3.jpg" />
+    <Content Include="BusOfis\Logolar\Vaxt30px.png" />
+    <Content Include="BusOfis\Logolar\YT.png" />
+    <Content Include="BusOfis\MasterHome.aspx" />
+    <Content Include="BusOfis\MasterStyle.css" />
+    <Content Include="BusOfis\PhotoSuruculer\AlikEhmedov.bmp" />
+    <Content Include="BusOfis\PhotoSuruculer\ArzuBabayev.bmp" />
+    <Content Include="BusOfis\PhotoSuruculer\ElsenAgayev.bmp" />
+    <Content Include="BusOfis\PhotoSuruculer\ElxanDadasov.bmp" />
+    <Content Include="BusOfis\PhotoSuruculer\Fexreddinİsgenderov.bmp" />
+    <Content Include="BusOfis\PhotoSuruculer\HilmiSahin.jpg" />
+    <Content Include="BusOfis\PhotoSuruculer\RamalHesenov.bmp" />
+    <Content Include="BusOfis\PhotoSuruculer\RaminIsmayilov.bmp" />
+    <Content Include="BusOfis\PhotoSuruculer\RasimƏliyev.bmp" />
+    <Content Include="BusOfis\PhotoSuruculer\TeymurIsmayilov.bmp" />
+    <Content Include="BusOfis\PhotoSuruculer\XaliqƏləkbərzadə.bmp" />
+    <Content Include="BusOfis\PhotoSuruculer\ƏliBabayev.bmp" />
+    <Content Include="BusOfis\Qarajlar.aspx" />
+    <Content Include="BusOfis\Suruculer.aspx" />
+    <Content Include="BusOfis\UserINFO.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="DeleteDriverDialogPage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buses_ADMIN.aspx.cs">
+      <DependentUpon>Buses_ADMIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buses_ADMIN.aspx.designer.cs">
+      <DependentUpon>Buses_ADMIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\AdminPanelLogIn.aspx.cs">
+      <DependentUpon>AdminPanelLogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\AdminPanelLogIn.aspx.designer.cs">
+      <DependentUpon>AdminPanelLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\Admin_DriverPage.aspx.cs">
+      <DependentUpon>Admin_DriverPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\Admin_DriverPage.aspx.designer.cs">
+      <DependentUpon>Admin_DriverPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\Admin_FOOTER.aspx.cs">
+      <DependentUpon>Admin_FOOTER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\Admin_FOOTER.aspx.designer.cs">
+      <DependentUpon>Admin_FOOTER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\ADMIN_HOME.aspx.cs">
+      <DependentUpon>ADMIN_HOME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\ADMIN_HOME.aspx.designer.cs">
+      <DependentUpon>ADMIN_HOME.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\Admin_MasterPage.Master.cs">
+      <DependentUpon>Admin_MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\Admin_MasterPage.Master.designer.cs">
+      <DependentUpon>Admin_MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\Admin_Menu.aspx.cs">
+      <DependentUpon>Admin_Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\Admin_Menu.aspx.designer.cs">
+      <DependentUpon>Admin_Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\Admin_Muraciet.aspx.cs">
+      <DependentUpon>Admin_Muraciet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\Admin_Muraciet.aspx.designer.cs">
+      <DependentUpon>Admin_Muraciet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\AnaSehife.aspx.cs">
+      <DependentUpon>AnaSehife.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\AnaSehife.aspx.designer.cs">
+      <DependentUpon>AnaSehife.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\BusAbout.aspx.cs">
+      <DependentUpon>BusAbout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\BusAbout.aspx.designer.cs">
+      <DependentUpon>BusAbout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\BusMaster.Master.cs">
+      <DependentUpon>BusMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\BusMaster.Master.designer.cs">
+      <DependentUpon>BusMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\BusesNumber.aspx.cs">
+      <DependentUpon>BusesNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\BusesNumber.aspx.designer.cs">
+      <DependentUpon>BusesNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\ClassSql.cs" />
+    <Compile Include="BusOfis\DriverInfo.aspx.cs">
+      <DependentUpon>DriverInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\DriverInfo.aspx.designer.cs">
+      <DependentUpon>DriverInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\Elaqe.aspx.cs">
+      <DependentUpon>Elaqe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\Elaqe.aspx.designer.cs">
+      <DependentUpon>Elaqe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\Info.aspx.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\Info.aspx.designer.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\Layihelerimiz.aspx.cs">
+      <DependentUpon>Layihelerimiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\Layihelerimiz.aspx.designer.cs">
+      <DependentUpon>Layihelerimiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\MasterHome.aspx.cs">
+      <DependentUpon>MasterHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\MasterHome.aspx.designer.cs">
+      <DependentUpon>MasterHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\Qarajlar.aspx.cs">
+      <DependentUpon>Qarajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\Qarajlar.aspx.designer.cs">
+      <DependentUpon>Qarajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\Suruculer.aspx.cs">
+      <DependentUpon>Suruculer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\Suruculer.aspx.designer.cs">
+      <DependentUpon>Suruculer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusOfis\UserINFO.aspx.cs">
+      <DependentUpon>UserINFO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusOfis\UserINFO.aspx.designer.cs">
+      <DependentUpon>UserINFO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDriverDialogPage.aspx.cs">
+      <DependentUpon>DeleteDriverDialogPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteDriverDialogPage.aspx.designer.cs">
+      <DependentUpon>DeleteDriverDialogPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BusOfis\BusMaster.Master" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="BusOfis\Admin_MasterPage.Master" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61285</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61285/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

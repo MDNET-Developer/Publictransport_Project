@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BusMaster.master.cs" Inherits="DiplomisiBus.BusOfis.BusMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+ 
+     
+  
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="MasterStyle.css" rel="stylesheet" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>SafaviTransport</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+     
+            <div class="container">
+                <br />
+                <div class="col-lg-12" id="YuxariHisse">
+                    <div>
+                        <a id="YuxariLogo" href="AnaSehife.aspx"><img src="Logolar/1645993908803.png" /></a>
+                    </div>
+
+                    <br />
+                    <div  id="YuxariHava">
+                        <!-- weather widget start -->
+                        <a   target="_blank" href="https://www.booked.net/weather/baku-19309">
+                            <img id="hava" src="https://w.bookcdn.com/weather/picture/26_19309_1_1_e74c3c_250_c0392b_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=&anc_id=96987" alt="booked.net" />
+
+                        </a>
+                        <!-- weather widget end -->
+                    </div>
+                </div>
+           
+                <script>
+                       $(document).ready(function(){
+                   $("#hamburgermenu").click(function(){
+                $(".Menu-ul").toggle(500);
+                   });
+                 });
+                </script>
+                <div  id="mobileMenuBTN">
+                   <a href="#"><img id="hamburgermenu"  src="Logolar/icons8_menu_50px.png" /></a> 
+                </div>
+                <%--Literal Ana Menu--%>
+                 <div style="width:100%;height:7px;background-color:#B60000"></div>
+               <div id="desktopMenu">
+                <asp:Literal ID="LtMenu" runat="server"></asp:Literal>
+               </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+        
+        <div id="footer" class="container  col-lg-12">
+        
+            <div style="width:100%; height:5px; background-color:#B60000;"></div>
+           <div class="row">
+                 <br>
+               
+                <div class="col-lg-4">
+                    <ul>
+                         <li class="footer-li" ><a><span>
+                            <img src="Logolar/Home30px.png" /></span><span>Ana səhifə</span></a></li>
+                        <li class="footer-li" ><span>
+                            <img src="Logolar/Marsurut30px.png" /></span><span>Marşrutlar</span></li>
+                        <li class="footer-li" ><span>
+                            <img src="Logolar/Qaraj30px.png" /></span><span>Qarajlar</span></li>
+                        <li class="footer-li" ><span>
+                            <img src="Logolar/icons8_driver_30px.png" /></span><span>Sürücülər</span></li>
+                        <li class="footer-li" ><span>
+                            <img src="Logolar/Struktur30px.png" /></span><span>Struktur</span></li>
+                        <li class="footer-li" ><span>
+                            <img src="Logolar/Layihe30PX.png" /></span><span>Yeni Layihələr</span></li>
+                        <li class="footer-li" ><span>
+                            <img src="Logolar/Elaqe30px.png" /></span><span>Əlaqə</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 ">
+                    <ul id="footer-ul">
+                        <li class="footer-li sosial">
+                            <img src="Logolar/Face.png" />FaceBook</li>
+                        <li class="footer-li sosial">
+                            <img src="Logolar/Insta.png" />Instagram</li>
+                        <li class="footer-li sosial">
+                            <img src="Logolar/Email.png" />e-mail</li>
+                        <li class="footer-li sosial">
+                            <img src="Logolar/YT.png" />You Tube</li>
+                    </ul>
+                </div>
+                    <div class="col-lg-4">
+               
+                     <img style="height:4cm" src="Logolar/1645993908803.png" />
+              
+                </div>
+           </div>
+                
+            
+        </div>
+    </form>
+</body>
+</html>
