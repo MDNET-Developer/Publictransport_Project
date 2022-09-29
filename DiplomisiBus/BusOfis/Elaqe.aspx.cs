@@ -26,12 +26,12 @@ namespace DiplomisiBus.BusOfis
        void elaqelendirme()
         {
             string k1;
-            string[] msv1 = { "A", "B", "C", "D", "E", "a", "r", "f", "y" };
+            string[] msv1 = { "A", "B", "C", "D", "E", "a", "r", "f", "y","m" };
             int s1 = rdm.Next(0, msv1.Length);
             k1 = (msv1[s1]);
 
             string k2;
-            string[] msv2 = { "1", "3", "5", "7", "9", "11", "13", "15", "17" };
+            string[] msv2 = { "1", "3", "5", "7", "9", "11", "13", "15", "17","18" };
             int s2 = rdm.Next(0, msv2.Length);
             k2 = (msv2[s2]);
 
@@ -41,7 +41,7 @@ namespace DiplomisiBus.BusOfis
             k3 = (msv3[s3]);
 
             string k4;
-            string[] msv4 = { "*", "0", "#", "@", ">", "!", "<", "+", "=" };
+            string[] msv4 = { "*", "0", "#", "@", ">", "!", "<", "+", "=","/" };
             int s4 = rdm.Next(0, msv4.Length);
             k4 = (msv4[s4]);
 
@@ -87,7 +87,7 @@ namespace DiplomisiBus.BusOfis
             else
             {
                 //Response.Write("<script>alert('Hörmətli istifadəçi xahiş edirik bütün parametrləri daxil edin')</script>");
-                lbl_info.Text = "ⓘ Hörmətli istifadəçi təyin olunan bütün parametrləri daxil etməyiniz xahiş olunur.Əks halda sizin mesajınız göndərilməyəcək.";
+                lbl_info.Text = "ⓘ Hörmətli istifadəçi, təyin olunan bütün parametrləri daxil etməyiniz xahiş olunur.Əks halda sizin mesajınız göndərilməyəcək.";
             }
         }
     }

@@ -17,7 +17,7 @@ namespace DiplomisiBus.BusOfis
         {
             if (!Page.IsPostBack)
             {
-               string ID;
+                string ID;
                 ID = Request.QueryString["ID"].ToString();
                 GetBusInfo(ID);
                 GetBusPhoto(ID);
@@ -40,7 +40,7 @@ namespace DiplomisiBus.BusOfis
 
              void GetBusInfo(string ID)
             {
-                DataTable dt = klas.getdatatable(" Select * from TB_Avtobuslar where ID=" + ID);
+                DataTable dt = klas.getdatatable("Select * from TB_Avtobuslar where ID=" + ID);
 
                 if (dt != null)
                 {
